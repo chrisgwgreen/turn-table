@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 io.on("connection", (socket) => {
   console.log("a user connected");
 
-  io.emit("message", "Hello from the other side...");
+  io.emit("welcome", "Hello from the other side...");
 });
 
 server.listen(3001, () => {
